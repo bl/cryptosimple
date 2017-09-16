@@ -6,4 +6,10 @@
       <p class="card-text" id"{{name}}">{{name}}: {{allocation}}</p>
     {{/each}}
   </div>
+
+  <form class="resource" action="/accounts/{{_id}}/trade" method="post">
+    <label for="amount" class="form-control" type="text">
+    <input name="amount"></input>
+    <button type="submit" class="btn btn-primary">Issue Trade</button>
+  </form>
 </div>

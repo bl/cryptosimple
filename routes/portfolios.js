@@ -11,10 +11,16 @@ router.get('/', function(req, res, next) {
       console.log(err);
       return;
     }
-    res.render('portfolios/index', {
+
+    var payload = {
       title: 'List of portfolios',
       portfolios: records,
-    })
+    };
+    if(!req.accepts('*/*') && req.accepts('application/json')) {
+      renderJson(res, payload);
+    } else {
+      res.render('portfolios/index', payload);
+    }
   });
 });
 
@@ -40,7 +46,11 @@ router.get('/show/:id', function(req, res, next) {
       return;
     }
 
-    res.render('portfolios/show', record);
+    if(!req.accepts('*/*') && req.accepts('application/json')) {
+      renderJson(res, record);
+    } else {
+      res.render('portfolios/show', record);
+    }
   });
 });
 
@@ -58,7 +68,11 @@ router.post('/create', function(req, res, next) {
       return;
     }
 
-    res.redirect(`/portfolios/show/${record.id}`);
+    if(!req.accepts('*/*') && req.accepts('application/json')) {
+      renderJson(res, record);
+    } else {
+      res.redirect(`/portfolios/show/${record.id}`);
+    }
   });
 });
 
@@ -73,4 +87,10 @@ function validatePortfolio(params) {
 
   return true;
 }
+
+function renderJson(res, body) {
+  res.type('json');
+  res.send(JSON.stringify(body));
+}
+
 module.exports = router;

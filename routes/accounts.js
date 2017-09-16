@@ -11,8 +11,17 @@ router.get('/show/:id', function(req, res, next) {
       return;
     }
 
-    res.render('accounts/show', record);
+    if(!req.accepts('*/*') && req.accepts('application/json')) {
+      renderJson(res, record);
+    } else {
+      res.render('accounts/show', record);
+    }
   });
+});
+
+router.post('/:id/trade', function(req, res, next) {
+  var deposit = req.amount;
+  // buy BTC at the rate requested
 });
 
 router.post('/create', function(req, res, next) {
@@ -53,6 +62,11 @@ function getPortfolio(portfolioId, cb) {
     
     cb(record);
   });
+}
+
+function renderJson(res, body) {
+  res.type('json');
+  res.send(JSON.stringify(body));
 }
 
 module.exports = router;
