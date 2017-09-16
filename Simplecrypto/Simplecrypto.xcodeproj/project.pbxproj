@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C8E243C3ADDCE8448B9C849 /* Pods_Simplecrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D708089461665684E9DEA6 /* Pods_Simplecrypto.framework */; };
+		789F1EDF1F6D1EAF0089AD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F1EDE1F6D1EAF0089AD41 /* AppDelegate.swift */; };
+		789F1EE11F6D1EAF0089AD41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F1EE01F6D1EAF0089AD41 /* ViewController.swift */; };
+		789F1EE61F6D1EAF0089AD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789F1EE51F6D1EAF0089AD41 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38829F4BA4DC28A4F6D73FEB /* Pods-Simplecrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplecrypto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simplecrypto/Pods-Simplecrypto.release.xcconfig"; sourceTree = "<group>"; };
+		789F1EDB1F6D1EAF0089AD41 /* Simplecrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simplecrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		789F1EDE1F6D1EAF0089AD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		789F1EE01F6D1EAF0089AD41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		789F1EE51F6D1EAF0089AD41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		789F1EEA1F6D1EAF0089AD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D708089461665684E9DEA6 /* Pods_Simplecrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simplecrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF2B544CC9E8DBDC2EC5586 /* Pods-Simplecrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simplecrypto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simplecrypto/Pods-Simplecrypto.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		789F1ED81F6D1EAF0089AD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C8E243C3ADDCE8448B9C849 /* Pods_Simplecrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34377203494DDAF1691A60B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCF2B544CC9E8DBDC2EC5586 /* Pods-Simplecrypto.debug.xcconfig */,
+				38829F4BA4DC28A4F6D73FEB /* Pods-Simplecrypto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		789F1ED21F6D1EAF0089AD41 = {
+			isa = PBXGroup;
+			children = (
+				789F1EDD1F6D1EAF0089AD41 /* Simplecrypto */,
+				789F1EDC1F6D1EAF0089AD41 /* Products */,
+				34377203494DDAF1691A60B6 /* Pods */,
+				E90AEBDF48CB1F4F573102FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		789F1EDC1F6D1EAF0089AD41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				789F1EDB1F6D1EAF0089AD41 /* Simplecrypto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		789F1EDD1F6D1EAF0089AD41 /* Simplecrypto */ = {
+			isa = PBXGroup;
+			children = (
+				789F1EDE1F6D1EAF0089AD41 /* AppDelegate.swift */,
+				789F1EE01F6D1EAF0089AD41 /* ViewController.swift */,
+				789F1EE51F6D1EAF0089AD41 /* Assets.xcassets */,
+				789F1EEA1F6D1EAF0089AD41 /* Info.plist */,
+			);
+			path = Simplecrypto;
+			sourceTree = "<group>";
+		};
+		E90AEBDF48CB1F4F573102FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94D708089461665684E9DEA6 /* Pods_Simplecrypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		789F1EDA1F6D1EAF0089AD41 /* Simplecrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789F1EED1F6D1EAF0089AD41 /* Build configuration list for PBXNativeTarget "Simplecrypto" */;
+			buildPhases = (
+				D1FBD2B0BF46D30CD60FF451 /* [CP] Check Pods Manifest.lock */,
+				789F1ED71F6D1EAF0089AD41 /* Sources */,
+				789F1ED81F6D1EAF0089AD41 /* Frameworks */,
+				789F1ED91F6D1EAF0089AD41 /* Resources */,
+				96AF1350D6EC84F89061C3C8 /* [CP] Embed Pods Frameworks */,
+				E04C74C7023D1C27D1DBAC00 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Simplecrypto;
+			productName = Simplecrypto;
+			productReference = 789F1EDB1F6D1EAF0089AD41 /* Simplecrypto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		789F1ED31F6D1EAF0089AD41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CYB;
+				TargetAttributes = {
+					789F1EDA1F6D1EAF0089AD41 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 789F1ED61F6D1EAF0089AD41 /* Build configuration list for PBXProject "Simplecrypto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 789F1ED21F6D1EAF0089AD41;
+			productRefGroup = 789F1EDC1F6D1EAF0089AD41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				789F1EDA1F6D1EAF0089AD41 /* Simplecrypto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		789F1ED91F6D1EAF0089AD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789F1EE61F6D1EAF0089AD41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96AF1350D6EC84F89061C3C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Simplecrypto/Pods-Simplecrypto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/coinbase-official/coinbase_official.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/coinbase_official.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simplecrypto/Pods-Simplecrypto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1FBD2B0BF46D30CD60FF451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simplecrypto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E04C74C7023D1C27D1DBAC00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simplecrypto/Pods-Simplecrypto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		789F1ED71F6D1EAF0089AD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789F1EE11F6D1EAF0089AD41 /* ViewController.swift in Sources */,
+				789F1EDF1F6D1EAF0089AD41 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		789F1EEB1F6D1EAF0089AD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		789F1EEC1F6D1EAF0089AD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		789F1EEE1F6D1EAF0089AD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF2B544CC9E8DBDC2EC5586 /* Pods-Simplecrypto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Simplecrypto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CYB.Simplecrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		789F1EEF1F6D1EAF0089AD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38829F4BA4DC28A4F6D73FEB /* Pods-Simplecrypto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Simplecrypto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CYB.Simplecrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		789F1ED61F6D1EAF0089AD41 /* Build configuration list for PBXProject "Simplecrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789F1EEB1F6D1EAF0089AD41 /* Debug */,
+				789F1EEC1F6D1EAF0089AD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789F1EED1F6D1EAF0089AD41 /* Build configuration list for PBXNativeTarget "Simplecrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789F1EEE1F6D1EAF0089AD41 /* Debug */,
+				789F1EEF1F6D1EAF0089AD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 789F1ED31F6D1EAF0089AD41 /* Project object */;
+}
