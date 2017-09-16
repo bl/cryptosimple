@@ -1,2 +1,6 @@
 <!DOCTYPE html>
 {{> portfolio}}
+<form action="/accounts/create" method="post">
+  <input name="portfolio" value="{{_id}}" type="hidden" />
+    <button type="submit" class="btn btn-primary">Create new account</button>
+</form>

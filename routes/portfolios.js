@@ -63,7 +63,7 @@ router.post('/create', function(req, res, next) {
 });
 
 function validatePortfolio(params) {
-  var assets = _.map(params.assets, function(asset) { return parseInt(asset.quantity); });
+  var assets = _.map(params.assets, function(asset) { return parseInt(asset.allocation); });
   var assetTotal = _.reduce(assets, function(memo, num) {
     return memo + num;
   }, 0);
