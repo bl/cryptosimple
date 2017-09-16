@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<h1>{{title}}</h1>
+<form class="resource" action="/portfolios/create" method="post">
+    {{#if error}}
+      <div class="alert alert-danger">
+        {{error}}
+      </div>
+    {{/if}}
+
+    <label for="name">Name</label>
+    <input name="name" class="form-control" type="text"></input>
+    <div class="form-group">
+      {{#each assets}}
+        {{> portfolio_asset }}
+      {{/each}}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
