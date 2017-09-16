@@ -8,5 +8,6 @@ target 'Simplecrypto' do
 
   # Pods for Simplecrypto
     pod "coinbase-official"
+    pod "Alamofire"
 
 end
