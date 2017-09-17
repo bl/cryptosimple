@@ -28,7 +28,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 // configure sessions
 var sess = {
   secret: 'keyboard cat',
-  cookie: {}
+  cookie: { secure: false }
 }
 
 if (app.get('env') === 'production') {

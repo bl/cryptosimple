@@ -76,6 +76,7 @@ function storeAccessCredentials(opts, cb) {
         return;
       }
 
+      console.log(record);
       cb();
     });
   });

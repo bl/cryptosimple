@@ -18,3 +18,18 @@
     //});
   //});
 //});
+
+function updateRates(rate) {
+  $('#trade_summary li').each(function(index, li) {
+    var name = $(li).attr('id');
+    var allocation = $(`#${name}`).attr('value');
+
+    $(`li#${name}`).text(`${name}: $${rate * allocation / 100}`);
+  });
+};
+
+$(document).ready(function() {
+  $('#trade_amount').on('keypress', function(event) {
+    updateRates($(this).val());
+  });
+});

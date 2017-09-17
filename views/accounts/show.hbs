@@ -1,15 +1,35 @@
 <!DOCTYPE html>
+{{#if message}}
+  <div class="alert alert-success">
+    {{message}}
+  </div>
+{{/if}}
+
+
 <div class="card">
   <div class="card-block">
     <h4 class="card-title">{{name}}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Account allocations</h6>
     {{#each assets}}
       <p class="card-text" id"{{name}}">{{name}}: {{allocation}}</p>
     {{/each}}
+
+    <h6 class="card-subtitle mb-2 text-muted">Account balance</h6>
+    <p class="card-text">${{balance.amount}}</p>
   </div>
 
-  <form class="resource" action="/accounts/{{_id}}/trade" method="post">
+  <a class="btn btn-primary" data-toggle="collapse" href="#trade_form" aria-expanded="false" aria-controls="trade_form">Make a buy</a>
+  <form id="trade_form" class="resource collapse" action="/accounts/{{_id}}/trade" method="post">
+    <h4>This new trade will consist of:</h4>
+    <ul id="trade_summary" class="list-group">
+      {{#each assets}}
+        <input id="{{name}}" value="{{allocation}}" type="hidden">
+        <li id="{{name}}" class="list-group-item">{{name}}: </li>
+      {{/each}}
+    </ul>
+
     <label for="amount" class="form-control" type="text">
-    <input name="amount"></input>
-    <button type="submit" class="btn btn-primary">Issue Trade</button>
+    <input id="trade_amount" name="amount"></input>
+    <button type="submit" class="btn btn-primary">Issue Buy</button>
   </form>
 </div>

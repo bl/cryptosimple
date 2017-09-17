@@ -18,8 +18,10 @@
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.11",
     "morgan": "~1.8.1",
+    "node-uuid": "^1.4.8",
     "request": "^2.81.0",
     "serve-favicon": "~2.4.2",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "uuid": "^3.1.0"
   }
 }
